@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- META ESSENTIEL -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- LIEN CORRIGÉ POUR LES ICÔNES -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- SEO -->
+  <meta name="description" content="Portfolio professionnel de Joseph-Michael YAO, technicien informatique spécialisé en maintenance, réseaux, développement web et vidéosurveillance.">
+  <meta name="keywords" content="technicien informatique, réseau, maintenance, vidéosurveillance, développeur web, Côte d'Ivoire">
+  <meta name="author" content="YAO KONAN KOUAKOU JOSEPH-MICHAEL">
+
+  <!-- OPEN GRAPH (pour partage WhatsApp / Facebook) -->
+  <meta property="og:title" content="Joseph-Michael YAO | Technicien Informatique">
+  <meta property="og:description" content="Technicien IT polyvalent spécialisé en maintenance, réseau et développement web.">
+  <meta property="og:image" content="profile.jpg">
+  <meta property="og:type" content="website">
+
+  <title>Joseph-Michael YAO | Technicien Informatique</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FAVICON -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    
+    <!-- LOGO -->
+    <div class="logo" aria-label="Logo du site">
+      TECHNICIEN<span>INFORMATIQUE</span>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav id="menu" class="nav-menu" aria-label="Navigation principale">
+      <a href="index.html" class="active">Accueil</a>
+      <a href="parcours.html">Parcours</a>
+      <a href="experience.html">Expérience</a>
+      <a href="certification.html">Certifications</a>
+      <a href="competence.html">Compétences</a>
+    </nav>
+
+    <!-- RÉSEAUX SOCIAUX (Désormais visibles) -->
+    <div class="socials" aria-label="Réseaux sociaux">
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://facebook.com/joseph.michael" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://wa.me/2250545827545" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="#" target="_blank" aria-label="Behance">
+        <i class="fab fa-behance"></i>
+      </a>
+      <a href="#" target="_blank" aria-label="Twitter">
+        <i class="fab fa-x-twitter"></i>
+      </a>
+    </div>
+
+    <!-- MENU MOBILE -->
+    <button class="burger" aria-label="Ouvrir le menu mobile" onclick="toggleMenu()">
+      ☰
+    </button>
+
+  </header>
+
+  <!-- ================= CONTENU PRINCIPAL ================= -->
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+      <!-- TEXTE -->
+      <div class="hero-text">
+        <h1>
+          YAO KONAN KOUAKOU <br>
+          <span>JOSEPH-MICHAEL</span>
+        </h1>
+
+        <p>
+          Technicien IT polyvalent spécialisé en maintenance informatique, support utilisateur,
+          administration réseau et développement web.  
+          J’interviens dans le diagnostic, la sécurisation des systèmes et la résolution rapide
+          des incidents, tout en garantissant performance, fiabilité et satisfaction utilisateur.
+        </p>
+
+        <a href="https://wa.me/2250545827545" class="btn" aria-label="Contacter Joseph-Michael">
+          Me contacter →
+        </a>
+      </div>
+
+      <!-- IMAGE -->
+      <div class="hero-img">
+        <div class="circle">
+          <img 
+            src="profile.jpg" 
+            alt="Photo de Joseph-Michael YAO, technicien informatique"
+            loading="lazy"
+          >
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ================= COMPÉTENCES LOGICIEL ================= -->
+    <section class="worked" aria-labelledby="competences-logiciel">
+      
+      <h2 id="competences-logiciel">Compétences logiciels</h2>
+
+        <div class="logos">
+
+          <div class="logo-item">
+            <img src="python.png" alt="Python">
+            <span>Python</span>
+          </div>
+
+          <div class="logo-item">
+            <img src="react_logo.webp" alt="React logo">
+            <span>React</span>
+          </div>
+
+          <div class="logo-item">
+            <img src="pfsense-logo.webp" alt="pfSense logo">
+            <span>pfSense</span>
+          </div>
+
+          <div class="logo-item">
+            <img src="maxresdefault.jpg" alt="virtual box et GNS3 logo">
+            <span>virtual box et GNS3</span>
+          </div>
+
+          <div class="logo-item">
+            <img src="office.webp" alt="Microsoft Office">
+            <span>Microsoft Office</span>
+          </div>
+
+        </div>
+    </section>
+
+  </main>
+
+  <!-- JS -->
+  <script src="script.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,361 @@
+/* =========================
+   RESET & BASE
+========================= */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+:root{
+  --bg:#070707;
+  --card:#0f0f0f;
+  --text:#ffffff;
+  --muted:#9aa0a6;
+  --primary:#00ff88;
+  --border:rgba(255,255,255,0.08);
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:16px 50px;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter: blur(14px);
+  z-index:1000;
+  border-bottom:1px solid var(--border);
+}
+
+.logo{
+  font-weight:700;
+  font-size:18px;
+}
+
+.logo span{
+  color:var(--primary);
+}
+
+nav a{
+  margin:0 14px;
+  text-decoration:none;
+  color:var(--muted);
+  font-size:14px;
+  transition:0.3s;
+  position:relative;
+}
+
+nav a:hover,
+nav a.active{
+  color:var(--text);
+}
+
+nav a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-4px;
+  width:0%;
+  height:2px;
+  background:var(--primary);
+  transition:0.3s;
+}
+
+nav a:hover::after,
+nav a.active::after{
+  width:100%;
+}
+
+.socials a{
+  margin-left:10px;
+  color:var(--muted);
+  text-decoration:none;
+}
+
+.socials a:hover{
+  color:var(--primary);
+}
+
+/* BURGER */
+.burger{
+  display:none;
+  font-size:26px;
+  cursor:pointer;
+  color:white;
+  background:none;
+  border:none;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:140px 80px 60px;
+  gap:40px;
+}
+
+.hero-text{
+  max-width:520px;
+}
+
+.hero-text h1{
+  font-size:52px;
+  line-height:1.1;
+}
+
+.hero-text h1 span{
+  color:var(--primary);
+}
+
+.hero-text p{
+  margin-top:20px;
+  color:var(--muted);
+}
+
+/* BUTTON */
+.btn{
+  margin-top:30px;
+  padding:14px 22px;
+  border:none;
+  background:var(--primary);
+  color:black;
+  font-weight:bold;
+  cursor:pointer;
+  border-radius:10px;
+  transition:0.3s;
+  display:inline-block;
+  box-shadow:0 0 25px rgba(0,255,136,0.2);
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+}
+
+/* IMAGE */
+.hero-img .circle{
+  width:340px;
+  height:340px;
+  border-radius:50%;
+  overflow:hidden;
+  border:4px solid #111;
+  box-shadow:0 0 50px rgba(0,255,136,0.15);
+}
+
+.hero-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section{
+  padding:60px 80px;
+}
+
+h1,h2,h3{
+  margin-bottom:10px;
+}
+
+.subtitle{
+  color:var(--muted);
+  margin-bottom:30px;
+}
+
+/* =========================
+   CARDS (COMPÉTENCES / EXP)
+========================= */
+.skill-card,
+.experience-card,
+.certification-card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:20px;
+  margin-bottom:20px;
+  transition:0.3s;
+}
+
+.skill-card:hover,
+.experience-card:hover,
+.certification-card:hover{
+  transform:translateY(-5px);
+  border-color:rgba(0,255,136,0.3);
+}
+
+/* SKILL BAR */
+.skill-level{
+  background:#1a1a1a;
+  height:6px;
+  border-radius:10px;
+  margin-top:10px;
+  overflow:hidden;
+}
+
+.level-bar{
+  height:100%;
+  background:var(--primary);
+}
+
+/* TAGS */
+.skill-badge,
+.skill-tag,
+.cert-skill{
+  display:inline-block;
+  padding:5px 10px;
+  margin:5px 5px 0 0;
+  background:#1a1a1a;
+  border-radius:8px;
+  font-size:12px;
+  color:var(--muted);
+}
+
+/* =========================
+   LOGOS
+========================= */
+.logos{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  color:var(--muted);
+}
+
+/* =========================
+   BUTTONS ACTIONS
+========================= */
+.btn-primary,
+.btn-secondary,
+.btn-cv{
+  padding:12px 18px;
+  border-radius:10px;
+  text-decoration:none;
+  display:inline-block;
+  margin:10px 5px 0 0;
+  transition:0.3s;
+}
+
+.btn-primary{
+  background:var(--primary);
+  color:black;
+}
+
+.btn-secondary{
+  background:#1a1a1a;
+  color:white;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-cv:hover{
+  transform:translateY(-3px);
+}
+
+/* =========================
+   BURGER MENU MOBILE
+========================= */
+@media (max-width: 900px){
+
+  .hero{
+    flex-direction:column;
+    text-align:center;
+    padding:120px 20px 40px;
+  }
+
+  nav{
+    display:none;
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:black;
+    flex-direction:column;
+    padding:20px;
+  }
+
+  nav.active{
+    display:flex;
+  }
+
+  .burger{
+    display:block;
+  }
+
+  section{
+    padding:40px 20px;
+  }
+
+  .hero-text h1{
+    font-size:38px;
+  }
+}
+
+/* ===== LOGOS COMPÉTENCES ===== */
+.logos{
+  display:flex;
+  flex-wrap:wrap;
+  gap:25px;
+  margin-top:20px;
+}
+
+.logo-item{
+  background:#0f0f0f;
+  border:1px solid rgba(255,255,255,0.08);
+  padding:15px;
+  border-radius:14px;
+  width:120px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  transition:0.3s;
+}
+
+.logo-item:hover{
+  transform:translateY(-5px);
+  border-color:#00ff88;
+}
+
+.logo-item img{
+  width:50px;
+  height:50px;
+  object-fit:contain;
+  margin-bottom:10px;
+}
+
+.logo-item span{
+  font-size:13px;
+  color:#aaa;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #ffffff; /* Couleur par défaut */
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #0077b5; /* Exemple : bleu LinkedIn au survol */
+}

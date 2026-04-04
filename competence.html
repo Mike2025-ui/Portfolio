@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- META ESSENTIEL -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- LIEN CORRIGÉ POUR LES ICÔNES -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- SEO -->
+  <meta name="description" content="Portfolio professionnel de Joseph-Michael YAO, technicien informatique spécialisé en maintenance, réseaux, développement web et vidéosurveillance.">
+  <meta name="keywords" content="technicien informatique, réseau, maintenance, vidéosurveillance, développeur web, Côte d'Ivoire">
+  <meta name="author" content="YAO KONAN KOUAKOU JOSEPH-MICHAEL">
+
+  <!-- OPEN GRAPH (pour partage WhatsApp / Facebook) -->
+  <meta property="og:title" content="Joseph-Michael YAO | Technicien Informatique">
+  <meta property="og:description" content="Technicien IT polyvalent spécialisé en maintenance, réseau et développement web.">
+  <meta property="og:image" content="profile.jpg">
+  <meta property="og:type" content="website">
+
+  <title>Joseph-Michael YAO | Technicien Informatique</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FAVICON -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    
+    <!-- LOGO -->
+    <div class="logo" aria-label="Logo du site">
+      TECHNICIEN<span>INFORMATIQUE</span>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav id="menu" class="nav-menu" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="parcours.html">Parcours</a>
+      <a href="experience.html">Expérience</a>
+      <a href="certification.html">Certifications</a>
+      <a href="competence.html" class="active">Compétences</a>
+    </nav>
+
+    <!-- RÉSEAUX SOCIAUX (Désormais visibles) -->
+    <div class="socials" aria-label="Réseaux sociaux">
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://facebook.com/joseph.michael" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://wa.me/2250545827545" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="#" target="_blank" aria-label="Behance">
+        <i class="fab fa-behance"></i>
+      </a>
+      <a href="#" target="_blank" aria-label="Twitter">
+        <i class="fab fa-x-twitter"></i>
+      </a>
+    </div>
+
+    <!-- MENU MOBILE -->
+    <button class="burger" aria-label="Ouvrir le menu mobile" onclick="toggleMenu()">
+      ☰
+    </button>
+
+  </header>
+
+  <main>
+    <!-- SECTION COMPÉTENCES -->
+    <section class="competences">
+      <div class="competences-header">
+        <h1>Mes Compétences</h1>
+        <p class="subtitle">Un savoir-faire technique au service de la performance</p>
+      </div>
+
+      <!-- Grille des compétences techniques -->
+      <div class="skills-container">
+        <!-- Maintenance IT -->
+        <div class="skill-card">
+          <div class="skill-icon">🖥️</div>
+          <h3>Maintenance IT</h3>
+          <p>Diagnostic, dépannage matériel et logiciel, optimisation des performances, installation et configuration de postes de travail.</p>
+          <div class="skill-level">
+            <div class="level-bar" style="width: 90%"></div>
+          </div>
+          <span class="level-text">Expert</span>
+        </div>
+
+        <!-- Réseaux -->
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>Réseaux & Télécoms</h3>
+          <p>Configuration d'équipements (routeurs, switches), VLAN, TCP/IP, dépannage réseau, câblage structuré.</p>
+          <div class="skill-level">
+            <div class="level-bar" style="width: 85%"></div>
+          </div>
+          <span class="level-text">Avancé</span>
+        </div>
+
+        <!-- Cybersécurité -->
+        <div class="skill-card">
+          <div class="skill-icon">🛡️</div>
+          <h3>Cybersécurité</h3>
+          <p>Sécurisation des systèmes, analyse de vulnérabilités, mise en place de pare-feux, sensibilisation utilisateurs.</p>
+          <div class="skill-level">
+            <div class="level-bar" style="width: 80%"></div>
+          </div>
+          <span class="level-text">Avancé</span>
+        </div>
+
+        <!-- Développement Web -->
+        <div class="skill-card">
+          <div class="skill-icon">💻</div>
+          <h3>Développement Web</h3>
+          <p>HTML5, CSS3, JavaScript, création de sites responsives, intégration d'interfaces modernes.</p>
+          <div class="skill-level">
+            <div class="level-bar" style="width: 75%"></div>
+          </div>
+          <span class="level-text">Intermédiaire</span>
+        </div>
+
+        <!-- Vidéosurveillance -->
+        <div class="skill-card">
+          <div class="skill-icon">📹</div>
+          <h3>Vidéosurveillance</h3>
+          <p>Installation et configuration de caméras IP, enregistreurs, accès distant, maintenance des systèmes de sécurité.</p>
+          <div class="skill-level">
+            <div class="level-bar" style="width: 85%"></div>
+          </div>
+          <span class="level-text">Avancé</span>
+        </div>
+
+        <!-- Support Utilisateur -->
+        <div class="skill-card">
+          <div class="skill-icon">🎧</div>
+          <h3>Support Utilisateur</h3>
+          <p>Assistance technique, résolution d'incidents, formation utilisateurs, documentation et suivi de tickets.</p>
+          <div class="skill-level">
+            <div class="level-bar" style="width: 95%"></div>
+          </div>
+          <span class="level-text">Expert</span>
+        </div>
+      </div>
+
+      <!-- Logiciels maîtrisés -->
+      <div class="software-section">
+        <h2>Logiciels & Outils</h2>
+        <div class="software-grid">
+          <div class="software-item">Windows Server</div>
+          <div class="software-item">Linux (Ubuntu, Debian)</div>
+          <div class="software-item">Wireshark</div>
+          <div class="software-item">VMware/VirtualBox</div>
+          <div class="software-item">Cisco Packet Tracer</div>
+          <div class="software-item">Active Directory</div>
+          <div class="software-item">Firewall (pfSense)</div>
+          <div class="software-item">VS Code</div>
+          <div class="software-item">ClickUp</div>
+          <div class="software-item">Dropbox</div>
+          <div class="software-item">Stripe</div>
+        </div>
+      </div>
+
+      <!-- Soft skills -->
+      <div class="softskills-section">
+        <h2>Qualités professionnelles</h2>
+        <div class="softskills-grid">
+          <span class="softskill-tag">🔧 Rigoureux</span>
+          <span class="softskill-tag">⚡ Réactif</span>
+          <span class="softskill-tag">🤝 Esprit d'équipe</span>
+          <span class="softskill-tag">📚 Autodidacte</span>
+          <span class="softskill-tag">💬 Pédagogue</span>
+          <span class="softskill-tag">🎯 Orienté solution</span>
+        </div>
+      </div>
+
+      <!-- Boutons de navigation -->
+      <div class="competences-actions">
+        <a href="certification.html" class="btn-secondary">← Retour aux certifications</a>
+        <a href="index.html" class="btn-primary">aller à l'accueil →</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
