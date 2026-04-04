@@ -278,19 +278,20 @@ h1,h2,h3{
     padding:120px 20px 40px;
   }
 
-  nav{
-    display:none;
-    position:absolute;
-    top:70px;
-    left:0;
-    width:100%;
-    background:black;
-    flex-direction:column;
-    padding:20px;
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: black;
+    flex-direction: column;
+    padding: 20px;
   }
 
-  nav.active{
-    display:flex;
+  .nav-menu.active {
+    display: flex;
   }
 
   .burger{
