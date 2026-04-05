@@ -1,4 +1,30 @@
 /* =========================
+   BARRES DE NIVEAU DE COMPÉTENCE
+========================= */
+.skill-level {
+  width: 100%;
+  background: #222;
+  border-radius: 8px;
+  height: 12px;
+  margin: 18px 0 8px 0;
+  overflow: hidden;
+}
+
+.level-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #00ff88 60%, #00c46b 100%);
+  border-radius: 8px;
+  transition: width 0.7s cubic-bezier(.77,0,.18,1);
+}
+
+.level-text {
+  display: block;
+  font-size: 13px;
+  color: var(--primary);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+/* =========================
    BOUTONS DE NAVIGATION
 ========================= */
 .certifications-actions {
