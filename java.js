@@ -8,6 +8,19 @@ function toggleMenu(){
   }
 }
 
+// Fermer le menu mobile quand on clique sur un lien (expérience mobile améliorée)
+document.addEventListener("DOMContentLoaded", function(){
+  const menu = document.getElementById("menu");
+  const links = menu ? menu.querySelectorAll("a") : [];
+  links.forEach(link => {
+    link.addEventListener("click", function(){
+      if(window.innerWidth <= 900 && menu.classList.contains("active")){
+        menu.classList.remove("active");
+      }
+    });
+  });
+});
+
 // =========================
 // SCROLL ANIMATION HERO (SAFE)
 // =========================
