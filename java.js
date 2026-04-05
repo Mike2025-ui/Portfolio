@@ -1,4 +1,15 @@
 // =========================
+// MENU DEROULANT (DROPDOWN)
+// =========================
+function toggleDropdown(e) {
+  e.preventDefault();
+  const parent = e.target.closest('.dropdown');
+  if (parent) {
+    parent.classList.toggle('active');
+  }
+}
+
+// =========================
 // MENU MOBILE
 // =========================
 function toggleMenu(){
